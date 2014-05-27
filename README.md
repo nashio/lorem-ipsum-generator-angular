@@ -1,7 +1,5 @@
-Lorem Paisum
-==========
-
 Lorem Ipsum generator using Angular.js
+==========
 
 **Demo**
 
