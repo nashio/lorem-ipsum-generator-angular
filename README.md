@@ -1,5 +1,5 @@
-Lorem Ipsum generator using Angular.js
-==========
+### Lorem Ipsum generator using Angular.js
+
 
 **Demo**
 
