@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Lorem Paisum</title>
+  
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/angular.min.js"></script>
+  <script src="js/main.js"></script>
+   
+</head>
+<body>
+
+<div class="wrap" ng-controller="LoremCtrl">
+  <input id="slide" type="range" ng-model="maxSentences" min="5" max="20" step="1" ng-change="generate()" />
+  <input type="text" ng-model="maxSentences" size="2" ng-init="maxSentences=5" placeholder="5"/>max sentences<br/>
+
+  <input id="slide" type="range" ng-model="numParagraphs" min="1" max="5" step="1" " ng-change="generate()" />
+  <input type="text" ng-model="numParagraphs" size="2" ng-init="numParagraphs=5" placeholder="5"/>num Paragraphs
+  
+  <a ng-click="generate()" href="">generate</a>
+  <ul ng-repeat="p in content.paragraphs track by $index">
+    <li>
+        {{p}}
+    </li>
+  </ul>
+</div>
+
+</body> 
+</html>
+
