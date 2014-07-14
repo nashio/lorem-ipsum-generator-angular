@@ -32,7 +32,7 @@ app.factory('generate', function(){
 function LoremCtrl($scope, generate) {
 
     $scope.seeds = {
-        mexican : ['lorem', 'ispum', 'asda', 'sda','bbb','ddd', 'ispum', 'arroz', 'tortilla','bbb','ddd', 'alacran', 'asda', 'sda','bbb','ddd'],
+        typical : ['lorem', 'ispum', 'asda', 'sda','bbb','ddd', 'ispum', 'arroz', 'tortilla','bbb','ddd', 'alacran', 'asda', 'sda','bbb','ddd'],
         hybrid : ['lorem2','asdasd','gasda','rsder','asdas','bbsdf'],
         clasic : ['lorem2','asdasd','gasda','rsder','asdas','bbsdf'] 
     };
@@ -45,7 +45,7 @@ function LoremCtrl($scope, generate) {
             minSentences : this.minSentences | 1, 
             maxSentences : this.maxSentences | 1, 
             numParagraphs : this.numParagraphs | 1,
-            data : $scope.seeds["mexican"]
+            data : $scope.seeds["typical"]
         }, function(result){
             $scope.content = { "paragraphs" : result };
         });
