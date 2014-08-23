@@ -3,4 +3,4 @@
 
 **Demo**
 
-[http://nashio.github.io/lorempaisum/](http://nashio.github.io/lorempaisum/)
+[http://nashio.github.io/lorem-ipsum-angular/index.html](http://nashio.github.io/lorem-ipsum-angular/index.html)
