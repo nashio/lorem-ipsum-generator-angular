@@ -6,7 +6,6 @@ app.factory('generate', function(){
     return {
         mixed: function(s, callback){
            var numSentences = s.maxSentences; 
-           //parseInt( Math.random() * (s.maxSentences - s.minSentences) + s.minSentences + 1);
            var numWords     = parseInt( Math.random(s.maxWords - s.minWords) + s.minWords + 1);
            var result       = "";
            var paragraphs   = [];
@@ -32,9 +31,9 @@ app.factory('generate', function(){
 function LoremCtrl($scope, generate) {
 
     $scope.seeds = {
-        typical : ['lorem', 'ispum', 'asda', 'sda','bbb','ddd', 'ispum', 'arroz', 'tortilla','bbb','ddd', 'alacran', 'asda', 'sda','bbb','ddd'],
-        hybrid : ['lorem2','asdasd','gasda','rsder','asdas','bbsdf'],
-        clasic : ['lorem2','asdasd','gasda','rsder','asdas','bbsdf'] 
+        typical : ['lorem', 'ispum', 'perspiciatis', 'sda','dolores','Neque', 'ispum', 'consectetu', 'adipisci','velit','ddd', 'alacran', 'asda', 'sda','bbb','ddd'],
+        hybrid : ['exercitationem','adipisci', 'inventore', 'veritatis et' ,'quasi'],
+        clasic : ['voluptatem','commod','gasda','beatae','aperiam','produces'] 
     };
     $scope.generate = function() {
 
